@@ -1,122 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Bhavik Kotak | Python Backend Developer</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bhavik Kotak – Python Backend Developer. Flask & Django specialist building AI-powered apps and REST APIs. IT Student at VVP Engineering College, Rajkot." />
+  <meta name="keywords" content="Bhavik Kotak, Python Developer, Flask, Django, Backend Developer, Portfolio, Rajkot" />
+  <meta property="og:title" content="Bhavik Kotak | Python Backend Developer" />
+  <meta property="og:description" content="Python Backend Developer specializing in Flask, Django and AI-powered web applications." />
+  <title>Bhavik Kotak | Python Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<header>
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">BK<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://github.com/BhavikKotak" target="_blank" class="nav-cta">GitHub</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-<div class="logo">Bhavik Kotak</div>
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow hero-glow--1"></div>
+    <div class="hero-glow hero-glow--2"></div>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
-</nav>
+    <div class="container hero-container">
+      <!-- Left -->
+      <div class="hero-text reveal">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Opportunities
+        </div>
+        <h1 class="hero-name">Bhavik<br /><span class="accent">Kotak</span></h1>
+        <p class="hero-role">
+          <span class="mono">&gt;&nbsp;</span>
+          <span id="typed-text" class="typed"></span>
+          <span class="cursor">|</span>
+        </p>
+        <p class="hero-intro">
+          Python Backend Developer crafting <span class="highlight">AI-powered applications</span>,
+          scalable REST APIs and full-stack web systems — turning ideas into live products.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#" class="btn btn-outline" id="downloadBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="https://github.com/BhavikKotak" target="_blank" class="btn btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            GitHub Profile
+          </a>
+        </div>
+      </div>
 
-</header>
+      <!-- Right – Avatar -->
+      <div class="hero-visual reveal reveal--delay">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <div class="avatar-placeholder">
+              <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                <circle cx="40" cy="30" r="18" fill="var(--accent)" opacity=".18"/>
+                <circle cx="40" cy="30" r="14" fill="var(--accent)" opacity=".35"/>
+                <path d="M10 70c0-16.569 13.431-30 30-30s30 13.431 30 30" fill="var(--accent)" opacity=".25"/>
+                <text x="40" y="37" text-anchor="middle" font-family="Syne" font-size="16" font-weight="800" fill="var(--accent)">BK</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="floating-badge fb--python">
+          <span>🐍</span> Python
+        </div>
+        <div class="floating-badge fb--flask">
+          <span>⚗️</span> Flask
+        </div>
+        <div class="floating-badge fb--django">
+          <span>🦄</span> Django
+        </div>
+        <div class="floating-badge fb--ai">
+          <span>🤖</span> AI / NLP
+        </div>
+      </div>
+    </div>
 
-<section class="hero" id="home">
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
 
-<h1>Python & Django Backend Developer</h1>
+  <!-- ░░ ABOUT ░░ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag mono"># about</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
 
-<p>
-IT Engineering Student building scalable backend systems, APIs,
-and database-driven web applications.
-</p>
+      <div class="about-grid">
+        <div class="glass-card about-card reveal">
+          <p class="about-text">
+            I am an <span class="highlight">Information Technology</span> student passionate about backend
+            development, AI-powered applications, REST APIs and scalable web systems using
+            <span class="highlight">Python, Flask</span> and <span class="highlight">Django</span>.
+          </p>
+          <p class="about-text">
+            From building a full AI recruitment platform to crafting clean personal finance tools,
+            I focus on writing maintainable code that ships to production — not just side projects that
+            gather dust.
+          </p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <span>VVP Engineering College, Rajkot</span>
+            </div>
+            <div class="meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <span>Gujarat Technological University (GTU)</span>
+            </div>
+            <div class="meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Rajkot, Gujarat, India</span>
+            </div>
+          </div>
+        </div>
 
-<div class="hero-buttons">
-<a href="#projects" class="btn">View Projects</a>
-<a href="https://github.com/BhavikKotak" target="_blank" class="btn-outline">GitHub</a>
-</div>
+        <!-- Stat Cards -->
+        <div class="stats-col">
+          <div class="stat-card glass-card reveal reveal--delay">
+            <div class="stat-number accent">2<span class="stat-plus">+</span></div>
+            <div class="stat-label">Live Projects</div>
+            <div class="stat-sub">Deployed on Render</div>
+          </div>
+          <div class="stat-card glass-card reveal reveal--delay2">
+            <div class="stat-number accent">7.68</div>
+            <div class="stat-label">CGPA</div>
+            <div class="stat-sub">B.E. Information Technology</div>
+          </div>
+          <div class="stat-card glass-card reveal reveal--delay3">
+            <div class="stat-number accent">10<span class="stat-plus">+</span></div>
+            <div class="stat-label">Technologies</div>
+            <div class="stat-sub">Python · Django · Flask · SQL…</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- ░░ PROJECTS ░░ -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag mono"># projects</span>
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-sub">Live products, not toy demos.</p>
+      </div>
 
-<section id="projects">
+      <div class="projects-grid">
 
-<h2 class="section-title">Projects</h2>
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-screenshot project-screenshot--1">
+            <div class="screenshot-overlay">
+              <div class="screenshot-icon">🤖</div>
+              <div class="screenshot-title">AI Resume Parser</div>
+            </div>
+            <div class="project-badge">AI / NLP</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">AI Resume Parser Platform</h3>
+            <p class="project-desc">
+              End-to-end AI-powered recruitment platform featuring candidate registration, recruiter
+              dashboard, authentication, resume upload, NLP-based data extraction, candidate
+              management and CSV export.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Flask</span>
+              <span class="tech-pill">SQLAlchemy</span>
+              <span class="tech-pill">SQLite</span>
+              <span class="tech-pill">spaCy</span>
+              <span class="tech-pill">NLP</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ai-resumes-parser.onrender.com" target="_blank" class="btn btn-primary btn--sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/BhavikKotak" target="_blank" class="btn btn-outline btn--sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
 
-<div class="projects-grid">
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal reveal--delay">
+          <div class="project-screenshot project-screenshot--2">
+            <div class="screenshot-overlay">
+              <div class="screenshot-icon">💰</div>
+              <div class="screenshot-title">Expense Tracker</div>
+            </div>
+            <div class="project-badge">Full-Stack</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Django Expense Tracker</h3>
+            <p class="project-desc">
+              Full-stack personal finance app with user authentication, expense categorization,
+              monthly summaries, detailed reporting and clean Bootstrap UI — all built on Django.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Django</span>
+              <span class="tech-pill">SQLite</span>
+              <span class="tech-pill">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="https://django-expense-tracker-di5r.onrender.com" target="_blank" class="btn btn-primary btn--sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/BhavikKotak" target="_blank" class="btn btn-outline btn--sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
 
-<div class="project-card">
+      </div>
+    </div>
+  </section>
 
-<h3>AI Resume Parser</h3>
+  <!-- ░░ SKILLS ░░ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag mono"># skills</span>
+        <h2 class="section-title">Tech Stack</h2>
+        <p class="section-sub">Tools I reach for every day.</p>
+      </div>
 
-<p>
-NLP system that extracts candidate details from resumes including
-skills, education and experience.
-</p>
+      <div class="skills-categories reveal">
 
-<p class="tech">Python • Flask • spaCy • SQLite</p>
+        <div class="skill-group glass-card">
+          <h4 class="skill-group-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Core Languages
+          </h4>
+          <div class="skill-pills">
+            <div class="skill-pill"><span class="sp-icon">🐍</span>Python</div>
+            <div class="skill-pill"><span class="sp-icon">🗄️</span>SQL</div>
+            <div class="skill-pill"><span class="sp-icon">🌐</span>HTML</div>
+            <div class="skill-pill"><span class="sp-icon">🎨</span>CSS</div>
+          </div>
+        </div>
 
-<a href="https://github.com/BhavikKotak/ai-resume-parser" target="_blank">View Code →</a>
+        <div class="skill-group glass-card">
+          <h4 class="skill-group-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Frameworks
+          </h4>
+          <div class="skill-pills">
+            <div class="skill-pill"><span class="sp-icon">🦄</span>Django</div>
+            <div class="skill-pill"><span class="sp-icon">⚗️</span>Flask</div>
+            <div class="skill-pill"><span class="sp-icon">🅱️</span>Bootstrap</div>
+          </div>
+        </div>
 
-</div>
+        <div class="skill-group glass-card">
+          <h4 class="skill-group-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            Databases & APIs
+          </h4>
+          <div class="skill-pills">
+            <div class="skill-pill"><span class="sp-icon">🗃️</span>SQLite</div>
+            <div class="skill-pill"><span class="sp-icon">🔗</span>REST APIs</div>
+            <div class="skill-pill"><span class="sp-icon">🔐</span>Authentication</div>
+          </div>
+        </div>
 
-<div class="project-card">
+        <div class="skill-group glass-card">
+          <h4 class="skill-group-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
+            Tools & Libraries
+          </h4>
+          <div class="skill-pills">
+            <div class="skill-pill"><span class="sp-icon">📊</span>Pandas</div>
+            <div class="skill-pill"><span class="sp-icon">🐙</span>Git</div>
+            <div class="skill-pill"><span class="sp-icon">🐱</span>GitHub</div>
+            <div class="skill-pill"><span class="sp-icon">🧠</span>spaCy / NLP</div>
+          </div>
+        </div>
 
-<h3>Django Expense Tracker</h3>
+      </div>
 
-<p>
-Full stack Django application with authentication and financial tracking.
-</p>
+      <!-- Focus areas -->
+      <div class="focus-areas reveal">
+        <div class="focus-item glass-card">
+          <div class="focus-icon">🏗️</div>
+          <h4>Backend Development</h4>
+          <p>Scalable server-side logic, MVC architecture, clean API design</p>
+        </div>
+        <div class="focus-item glass-card">
+          <div class="focus-icon">🤖</div>
+          <h4>AI Integration</h4>
+          <p>NLP pipelines, automated data extraction, intelligent applications</p>
+        </div>
+        <div class="focus-item glass-card">
+          <div class="focus-icon">🚀</div>
+          <h4>Deployment</h4>
+          <p>Live apps on Render, production-ready configurations</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<p class="tech">Django • Python • SQLite • Bootstrap</p>
+  <!-- ░░ EDUCATION ░░ -->
+  <section class="section section--alt" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag mono"># education</span>
+        <h2 class="section-title">Education</h2>
+      </div>
 
-<a href="https://django-expense-tracker-di5r.onrender.com" target="_blank">Live Demo →</a>
+      <div class="edu-card glass-card reveal">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-body">
+          <div class="edu-top">
+            <h3 class="edu-degree">Bachelor of Engineering — Information Technology</h3>
+            <div class="cgpa-badge">CGPA <strong>7.68</strong></div>
+          </div>
+          <p class="edu-institution">VVP Engineering College, Rajkot</p>
+          <p class="edu-uni mono">Gujarat Technological University (GTU)</p>
+          <div class="edu-tags">
+            <span class="tech-pill">Python Programming</span>
+            <span class="tech-pill">Database Management</span>
+            <span class="tech-pill">Web Technologies</span>
+            <span class="tech-pill">Software Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <!-- ░░ GITHUB ░░ -->
+  <section class="section" id="github">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag mono"># github</span>
+        <h2 class="section-title">Open Source</h2>
+      </div>
 
-</div>
+      <div class="github-card glass-card reveal">
+        <div class="github-inner">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          <div>
+            <h3 class="github-handle">@BhavikKotak</h3>
+            <p class="github-desc">Source code for all projects, experiments and learning logs.</p>
+          </div>
+          <a href="https://github.com/BhavikKotak" target="_blank" class="btn btn-primary">View Profile →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- ░░ CONTACT ░░ -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag mono"># contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">Open to internships, collaborations and full-time opportunities.</p>
+      </div>
 
-<section id="skills">
+      <div class="contact-grid">
+        <div class="contact-card glass-card reveal">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h4>Email</h4>
+          <a href="mailto:bahvikkotak@gmail.com" class="contact-link">bahvikkotak@gmail.com</a>
+        </div>
 
-<h2 class="section-title">Skills</h2>
+        <div class="contact-card glass-card reveal reveal--delay">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h4>Location</h4>
+          <p class="contact-text">Rajkot, Gujarat, India</p>
+        </div>
 
-<div class="skills-grid">
+        <div class="contact-card glass-card reveal reveal--delay2">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <h4>GitHub</h4>
+          <a href="https://github.com/BhavikKotak" target="_blank" class="contact-link">github.com/BhavikKotak</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<span>Python</span>
-<span>Django</span>
-<span>Flask</span>
-<span>SQL</span>
-<span>Git</span>
-<span>REST APIs</span>
-<span>Database Design</span>
-<span>Authentication Systems</span>
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="nav-logo">BK<span class="dot">.</span></span>
+      <p class="footer-copy">© 2025 Bhavik Kotak · Built with passion in Rajkot 🇮🇳</p>
+      <a href="#hero" class="back-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
 
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2 class="section-title">Contact</h2>
-
-<p>Email: bahvikkotak@gmail.com</p>
-<p>Location: Rajkot, Gujarat, India</p>
-
-<a href="mailto:bahvikkotak@gmail.com" class="btn">Send Email</a>
-
-</section>
-
-<footer>
-
-<p>© 2026 Bhavik Kotak | Backend Developer</p>
-
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
